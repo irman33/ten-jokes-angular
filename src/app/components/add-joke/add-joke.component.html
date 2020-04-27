@@ -1,0 +1,25 @@
+<form
+  #myForm="ngForm"
+  autocomplete="off"
+  (ngSubmit)="onSubmit(); myForm.reset()"
+>
+  <div class="add-joke">
+    <div class="inputs">
+      <input
+        type="text"
+        name="title"
+        [(ngModel)]="title"
+        placeholder="Title"
+        autofill="false"
+      />
+      <input
+        [(ngModel)]="text"
+        type="text"
+        name="text"
+        placeholder="Write a new joke..."
+        autofill="false"
+      />
+    </div>
+    <button type="submit">+</button>
+  </div>
+</form>

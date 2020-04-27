@@ -1,0 +1,4 @@
+<app-add-joke (addJoke)="addJoke($event)"></app-add-joke>
+<div class="jokes">
+  <joke *ngFor="let joke of jokes" [joke]="joke"></joke>
+</div>
